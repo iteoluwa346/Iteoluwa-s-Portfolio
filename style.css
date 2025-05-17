@@ -1,0 +1,120 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+}
+
+header {
+  background-color: #ffb6c1;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  background: #d63384;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #ffb6c1;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project {
+  width: 200px;
+  background: rgb(245, 169, 194);
+  padding: 10px;
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #c64990;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+body.profile-page {
+  background: linear-gradient(to bottom right, #ffe4f0, #ffc1e3);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #4b004f;
+  text-align: center;
+  padding: 20px;
+}
+
+.cutesy-profile h1 {
+  font-size: 2.5em;
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px #fff0f5;
+}
+
+.cutesy-profile p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0% {opacity: 0.2;}
+  50% {opacity: 1;}
+  100% {opacity: 0.2;}
+}
+
+.sparkle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url('https://i.ibb.co/ZgQFzmr/sparkle.png') no-repeat center center / contain;
+  animation: sparkle 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Random sparkle placement (optional) */
+.sparkle:nth-child(1) { top: 10%; left: 20%; }
+.sparkle:nth-child(2) { top: 30%; left: 70%; }
+.sparkle:nth-child(3) { top: 60%; left: 40%; }
